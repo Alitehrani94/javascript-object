@@ -1,0 +1,18 @@
+*{
+    text-align: center;
+    background-color: rgb(196, 214, 195);
+}
+a{
+    
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+}
+a:hover{
+    color: rgb(116, 112, 106);
+    font-size: large;
+}
+
+p{
+    font-size: x-large;
+}
