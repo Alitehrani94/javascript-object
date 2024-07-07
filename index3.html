@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <p id="demo"></p>
+    <a href=""></a>
+    <script>
+
+        let text = "";
+        const menu = [{ name: "home", url: "www.home.com", tooltip: "Home" },
+        { name: "products", url: "www.products.com", tooltip: "Products" },
+        { name: "contactus", url: "www.contactus.com", tooltip: "Contact us" },
+        { name: "about us", url: "www.about.com", tooltip: "About us" }]
+        function menusaz(menu) {
+            for (let i = 0; i < menu.length; i++) {
+
+                text += "<a href='" + menu[i].url + "' title='" + menu[i].tooltip + "'>" + menu[i].name + "</a>";
+            }
+            return text;
+
+        }
+
+        document.getElementById("demo").innerHTML = menusaz(menu);
+
+
+    </script>
+</body>
+
+
+</html>
